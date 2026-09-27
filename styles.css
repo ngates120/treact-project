@@ -159,6 +159,10 @@ li {
   transition: 300ms;
 }
 
+.btn:hover {
+  background-color: rgb(80, 17, 204);
+}
+
 .btn__menu--close {
   position: fixed;
   top: 24px;
@@ -214,6 +218,22 @@ li {
   margin: 0px 24px;
 }
 
+.nav__link::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -6px;
+  height: 2px;
+  width: 100%;
+  opacity: 0;
+  background: rgb(100, 21, 255);
+  transition: 300ms;
+}
+
+.nav__link:hover::after {
+  opacity: 1;
+}
+
 .nav__link--primary {
   color: rgb(255, 255, 255);
   background-color: rgb(100, 21, 255);
@@ -227,6 +247,16 @@ li {
   border-color: currentColor;
   border-image: none;
   transition: 300ms;
+}
+
+.nav__link--primary:hover {
+  background-color: rgb(80, 17, 204);
+}
+
+.nav__link--primary::after {
+  content: "";
+  width: 0px;
+  height: 0px;
 }
 
 .nav__links {
@@ -297,6 +327,10 @@ header .row {
   border-color: currrentcolor;
   border-image: none;
   transition: 300ms;
+}
+
+.header__email--btn:hover {
+  background-color: rgb(60, 13, 153);
 }
 
 .header__customers--title {
@@ -752,6 +786,14 @@ header .row {
   border-radius: 9999px;
 }
 
+.plan__button:hover {
+  transform: translate(1px, -1px);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
 .plan:nth-child(2) {
   background: linear-gradient(
     135deg,
@@ -973,12 +1015,21 @@ header .row {
   margin: 1px;
 }
 
+.start__button:hover:nth-child(1) {
+  background-color: rgb(229, 62, 62);
+}
+
 .start__button:nth-child(2) {
   border-width: 1px;
   border-style: solid;
   border-color: rgb(160, 174, 192);
   border-image: none;
   transition: 300ms;
+}
+
+.start__button:hover:nth-child(2) {
+  background-color: rgb(247, 250, 252);
+  color: rgb(100, 21, 255);
 }
 
 .footer__columns {
@@ -1023,6 +1074,22 @@ header .row {
   font-weight: 500;
   position: relative;
   cursor: pointer;
+}
+
+.footer__column--link::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -6px;
+  height: 2px;
+  width: 100%;
+  opacity: 0;
+  background: rgb(255, 255, 255);
+  transition: 300ms;
+}
+
+.footer__column--link:hover::after {
+  opacity: 1;
 }
 
 .footer__column--link:nth-child(2) {
