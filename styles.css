@@ -931,6 +931,10 @@ header .row {
   transition: 300ms;
 }
 
+.testimonial__button:hover {
+  background-color: rgb(229, 231, 235);
+}
+
 .divider {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
@@ -976,6 +980,10 @@ header .row {
   }
 }
 
+.start__title, .start__buttons {
+  width: 50%;
+}
+
 .start__title {
   color: rgb(247, 250, 252);
   font-weight: 700;
@@ -984,9 +992,6 @@ header .row {
   z-index: 2;
 }
 
-.start__title .start__buttons {
-  width: 50%;
-}
 
 .start__buttons {
   display: flex;
